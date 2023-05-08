@@ -1,45 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta name="description"
-        content="DetGPT: Detect What You Need via Natural Language Instruction.">
-  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>DetGPT: Detect What You Need via Natural Language Instruction</title>
+    <meta charset="utf-8">
+    <meta name="description"
+          content="DetGPT: Detect What You Need via Natural Language Instruction.">
+    <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DetGPT: Detect What You Need via Natural Language Instruction</title>
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-    function gtag() {
-      dataLayer.push(arguments);
-    }
+        function gtag() {
+            dataLayer.push(arguments);
+        }
 
-    gtag('js', new Date());
+        gtag('js', new Date());
 
-    gtag('config', 'G-PYVRSFMDRL');
-  </script>
+        gtag('config', 'G-PYVRSFMDRL');
+    </script>
 
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+          rel="stylesheet">
 
-  <link rel="stylesheet" href="./static/css/bulma.min.css">
-  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="./static/css/index.css">
-<!--  <link rel="icon" href="./static/images/favicon.svg">-->
+    <link rel="stylesheet" href="./static/css/bulma.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+    <!--  <link rel="icon" href="./static/images/favicon.svg">-->
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script defer src="./static/js/fontawesome.all.min.js"></script>
-  <script src="./static/js/bulma-carousel.min.js"></script>
-  <script src="./static/js/bulma-slider.min.js"></script>
-  <script src="./static/js/index.js"></script>
-  <link  rel="icon" href="data:;base64,=">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./static/js/fontawesome.all.min.js"></script>
+    <script src="./static/js/bulma-carousel.min.js"></script>
+    <script src="./static/js/bulma-slider.min.js"></script>
+    <script src="./static/js/index.js"></script>
+    <link rel="icon" href="data:;base64,=">
 
 </head>
 <body>
@@ -86,51 +86,52 @@
 
 
 <section class="hero">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title" style="white-space: nowrap;">DetGPT: Detect What You Need via Reasoning</h1>
-          <div class="is-size-5 publication-authors">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered">
+                <div class="column has-text-centered">
+                    <h1 class="title is-1 publication-title" style="white-space: nowrap;">DetGPT: Detect What You Need
+                        via Reasoning</h1>
+                    <div class="is-size-5 publication-authors">
             <span class="author-block">
               Renjie Pi*<sup>1</sup>,</span>
-            <span class="author-block">
+                        <span class="author-block">
               Jiahui Gao*<sup>2</sup>,</span>
-            <span class="author-block">
+                        <span class="author-block">
               Shizhe Diao*<sup>1</sup>,
             </span>
-            <span class="author-block">
+                        <span class="author-block">
               Rui Pan<sup>1</sup>,
             </span>
-            <span class="author-block">
+                        <span class="author-block">
               Hanze Dong<sup>1</sup>,
             </span>
-            <span class="author-block">
+                        <span class="author-block">
               Jipeng Zhang<sup>1</sup>,
             </span>
-            <span class="author-block">
+                        <span class="author-block">
               Lewei Yao<sup>1</sup>,
             </span>
-            <br>
-            <span class="author-block">
-              Lingpeng Kong<sup>2</sup>
+                        <br>
+                        <span class="author-block">
+              Lingpeng Kong<sup>2</sup>,
             </span>
-            <span class="author-block">
+                        <span class="author-block">
               Tong Zhang<sup>1</sup>
             </span>
-          </div>
+                    </div>
 
-          <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>Hong Kong University of Science and Technology</span>
-            <span class="author-block"><sup>2</sup>The University of Hong Kong</span>
-            <br>
-            <span class="author-block">*Equal Contribution </span>
-          </div>
+                    <div class="is-size-5 publication-authors">
+                        <span class="author-block"><sup>1</sup>Hong Kong University of Science and Technology</span>
+                        <span class="author-block"><sup>2</sup>The University of Hong Kong</span>
+                        <br>
+                        <span class="author-block">*Equal Contribution </span>
+                    </div>
 
-          <div class="column has-text-centered">
-            <div class="demo-link">
-              <!-- Demo Link. -->
-              <span class="link-block">
+                    <div class="column has-text-centered">
+                        <div class="demo-link">
+                            <!-- Demo Link. -->
+                            <span class="link-block">
                 <a href="https://5dd96762bb0a96199b.gradio.live"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -139,37 +140,37 @@
                   <span>Demo</span>
                 </a>
               </span>
-<!--              &lt;!&ndash; PDF Link. &ndash;&gt;-->
-<!--              <span class="link-block">-->
-<!--                <a href="https://arxiv.org/nan/"-->
-<!--                   class="external-link button is-normal is-rounded is-dark">-->
-<!--                  <span class="icon">-->
-<!--                      <i class="fas fa-file-pdf"></i>-->
-<!--                  </span>-->
-<!--                  <span>Techinial Report (Coming Soon)</span>-->
-<!--                </a>-->
-<!--              </span>-->
-<!--              <span class="link-block">-->
-<!--                <a href="https://arxiv.org/abs/2011.12948"-->
-<!--                   class="external-link button is-normal is-rounded is-dark">-->
-<!--                  <span class="icon">-->
-<!--                      <i class="ai ai-arxiv"></i>-->
-<!--                  </span>-->
-<!--                  <span>arXiv</span>-->
-<!--                </a>-->
-<!--              </span>-->
-              <!-- Video Link. -->
-<!--              <span class="link-block">-->
-<!--                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"-->
-<!--                   class="external-link button is-normal is-rounded is-dark">-->
-<!--                  <span class="icon">-->
-<!--                      <i class="fab fa-youtube"></i>-->
-<!--                  </span>-->
-<!--                  <span>Video</span>-->
-<!--                </a>-->
-<!--              </span>-->
-              <!-- Code Link. -->
-              <span class="link-block">
+                            <!--              &lt;!&ndash; PDF Link. &ndash;&gt;-->
+                            <!--              <span class="link-block">-->
+                            <!--                <a href="https://arxiv.org/nan/"-->
+                            <!--                   class="external-link button is-normal is-rounded is-dark">-->
+                            <!--                  <span class="icon">-->
+                            <!--                      <i class="fas fa-file-pdf"></i>-->
+                            <!--                  </span>-->
+                            <!--                  <span>Techinial Report (Coming Soon)</span>-->
+                            <!--                </a>-->
+                            <!--              </span>-->
+                            <!--              <span class="link-block">-->
+                            <!--                <a href="https://arxiv.org/abs/2011.12948"-->
+                            <!--                   class="external-link button is-normal is-rounded is-dark">-->
+                            <!--                  <span class="icon">-->
+                            <!--                      <i class="ai ai-arxiv"></i>-->
+                            <!--                  </span>-->
+                            <!--                  <span>arXiv</span>-->
+                            <!--                </a>-->
+                            <!--              </span>-->
+                            <!-- Video Link. -->
+                            <!--              <span class="link-block">-->
+                            <!--                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"-->
+                            <!--                   class="external-link button is-normal is-rounded is-dark">-->
+                            <!--                  <span class="icon">-->
+                            <!--                      <i class="fab fa-youtube"></i>-->
+                            <!--                  </span>-->
+                            <!--                  <span>Video</span>-->
+                            <!--                </a>-->
+                            <!--              </span>-->
+                            <!-- Code Link. -->
+                            <span class="link-block">
                 <a href="https://github.com/google/nerfies"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -178,167 +179,176 @@
                   <span>Code</span>
                   </a>
               </span>
-<!--              &lt;!&ndash; Dataset Link. &ndash;&gt;-->
-<!--              <span class="link-block">-->
-<!--                <a href="https://github.com/google/nerfies/releases/tag/0.1"-->
-<!--                   class="external-link button is-normal is-rounded is-dark">-->
-<!--                  <span class="icon">-->
-<!--                      <i class="far fa-images"></i>-->
-<!--                  </span>-->
-<!--                  <span>Data</span>-->
-<!--                  </a>-->
-            </div>
+                            <!--              &lt;!&ndash; Dataset Link. &ndash;&gt;-->
+                            <!--              <span class="link-block">-->
+                            <!--                <a href="https://github.com/google/nerfies/releases/tag/0.1"-->
+                            <!--                   class="external-link button is-normal is-rounded is-dark">-->
+                            <!--                  <span class="icon">-->
+                            <!--                      <i class="far fa-images"></i>-->
+                            <!--                  </span>-->
+                            <!--                  <span>Data</span>-->
+                            <!--                  </a>-->
+                        </div>
 
-          </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 </section>
 
 
 <section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-    <img id="overall" width="80%" src="static/images/overall.png">
-<!--      <h3 class="subtitle has-text-centered"><p style="font-family:Times News Roman"><b>The overall architecture of DetGPT.</b></p></h3>-->
-    </div>
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            We present a simple object detector that is able to follow instructions.
-          </p>
-          <p>
-            Introducing our revolutionary object detector that is able to follow human instructions with ease.
-            Traditional object detectors have been limited by their closed set approach, which can only detect objects within a pre-defined class.
-            Open vocabulary object detection has helped to widen the scope of object detection, but it still requires the user to provide specific names of objects, which can be a tedious and time-consuming task.
-            However, our object detector takes things to the next level by allowing users to interact with it using natural language instructions.
-          </p>
-          <p>
-            This means that users can simply tell the detector what they are looking for, and it will use its advanced algorithms and computer vision capabilities to analyze the image and identify the objects that match the user's description.
-            Imagine being able to tell the detector that you want to find a red apple in a basket of fruits, or ask it to locate a specific type of tool in a cluttered workshop.
-            Our detector will not only be able to find the object but also provide accurate and detailed information about its location and other important features.
-          </p>
-          <p>
-            One of the most exciting things about our object detector is its ability to understand the context of the user's instructions.
-            For instance, if you tell it that you are thirsty and would like a cold beer, it can analyze the image and find a fridge, and then use its knowledge of typical fridge contents to locate the beer.
-            This means that the detector can identify objects based on their semantic meaning, making it a truly open vocabulary object detector.
-            Another great feature of our object detector is its flexibility. It can be used in a wide range of applications, from robotics and automation to security and surveillance.
-            For example, it can be used to identify specific individuals or objects in a crowded environment, or to monitor and manage inventory in a warehouse or retail store.
-            Overall, our object detector is a game-changer in the field of computer vision and object detection. Its ability to follow natural language instructions and identify objects based on their semantic meaning makes it a highly versatile and useful tool for a wide range of applications.
-            If you're looking for an object detector that is powerful, flexible, and easy to use, our detector is definitely worth considering.
-          </p>
+    <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+            <img id="overall" width="80%" src="static/images/overall.png">
+            <!--      <h3 class="subtitle has-text-centered"><p style="font-family:Times News Roman"><b>The overall architecture of DetGPT.</b></p></h3>-->
         </div>
-      </div>
-    </div>
-    <!--/ Abstract. -->
-
-<!--    &lt;!&ndash; Paper video. &ndash;&gt;-->
-<!--    <div class="columns is-centered has-text-centered">-->
-<!--      <div class="column is-four-fifths">-->
-<!--        <h2 class="title is-3">Video</h2>-->
-<!--        <div class="publication-video">-->
-<!--          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"-->
-<!--                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--    &lt;!&ndash;/ Paper video. &ndash;&gt;-->
-
-    <!-- Model. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Model</h2>
-        <div class="content has-text-justified">
-          <p>
-           To address the challenge of reasoning-based object detection, we employ the visual encoder of BLIP-2~\cite{li2023blip2} to comprehend the image and extract image features.
-            We then develop a cross-modal alignment function to map the image features to the text domain, and utilize Vicuna~\cite{vicuna2023} as the knowledge brain to interpret both the image features and human instructions, perform reasoning, and determine the target objects in the image that can accomplish the given task.
-            Finally, we use an off-the-shelf detector, Grounding-DINO~\cite{liu2023grounding}, to detect the objects in the image.
-            Following the approach of MiniGPT-4~\cite{zhu2023minigpt4}, we employ a linear projection layer for the cross-modal alignment, which has been proven effective in bridging the gap between vision and language modalities.
-            Our framework is illustrated in Figure~\ref{fig:framework}.
-       </p>
+        <!-- Abstract. -->
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+                <h2 class="title is-3">Abstract</h2>
+                <div class="content has-text-justified">
+                    <p>
+                        We present a novel object detector that is able to follow human instructions. Different from
+                        previous object detection methods, which requires the user to provide specific names of objects,
+                        our object detector takes things to the next level by allowing users to interact with it using
+                        natural language instructions. Our detector is not only able to find the target object but also
+                        provide accurate and detailed information about its location and other important features.
+                        The most exciting features about our object detector is its ability to perform reasoning under
+                        the context of the user's instructions and the visual scene. For instance, if the user tells it
+                        that he/she is thirsty and would like a cold beer, it can analyze the image and find a fridge,
+                        and then use its knowledge of typical fridge contents to locate the beer, even though the fridge
+                        is does not appear in the user instruction. Owing to this flexibility, the detector is able to
+                        interpret user instruction and automatically locate the object of interest, which makes it
+                        suitable for a wide range of applications, from robotics and automation to security and
+                        surveillance.
+                    </p>
+                </div>
+            </div>
         </div>
-        <img id="model" width="60%" src="static/images/framework.png">
-        <h3 class="subtitle has-text-centered">
-          <p style="font-family:Times News Roman"><b>The overall architecture of DetGPT.</b></p>
-        </h3>
-      </div>
-    </div>
-    <!--/ Model. -->
+        <!--/ Abstract. -->
 
-  </div>
+        <!--    &lt;!&ndash; Paper video. &ndash;&gt;-->
+        <!--    <div class="columns is-centered has-text-centered">-->
+        <!--      <div class="column is-four-fifths">-->
+        <!--        <h2 class="title is-3">Video</h2>-->
+        <!--        <div class="publication-video">-->
+        <!--          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"-->
+        <!--                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
+        <!--        </div>-->
+        <!--      </div>-->
+        <!--    </div>-->
+        <!--    &lt;!&ndash;/ Paper video. &ndash;&gt;-->
+
+        <!-- Model. -->
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+                <h2 class="title is-3">Model</h2>
+                <div class="content has-text-justified">
+                    <p>
+                        To address the challenge of reasoning-based object detection, we employ the visual encoder of
+                        BLIP-2 to comprehend the image and extract image features. We then develop a
+                        cross-modal alignment function to map the image features to the text domain, and utilize
+                        Vicuna as the knowledge brain to interpret both the image features and human
+                        instructions, perform reasoning, and determine the target objects in the image that can help
+                        accomplish the given task. Finally, we use an off-the-shelf detector,
+                        Grounding-DINO, to localize the target objects in the image. Following
+                        the approach of MiniGPT-4, we employ a linear projection layer for the
+                        cross-modal alignment, which has been proven effective in bridging the gap between vision and
+                        language modalities.
+                    </p>
+                </div>
+                <img id="model" width="60%" src="static/images/framework.png">
+                <h3 class="subtitle has-text-centered">
+                    <p style="font-family:Times News Roman"><b>The overall architecture of DetGPT.</b></p>
+                </h3>
+            </div>
+        </div>
+        <!--/ Model. -->
+
+    </div>
 </section>
 
 
 <section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
-    <pre><code> @misc{detgpt2023,
+    <div class="container is-max-desktop content">
+        <h2 class="title">BibTeX</h2>
+        <pre><code> @misc{detgpt2023,
     title = {DetGPT: Detect What You Need via Reasoning},
-    url = {to be finished},
-    author = {Pi, Renjie and Gao, Jiahui and Diao, Shizhe and Pan, Rui and Dong, Hanze and Zhang, Jipeng and Yao, Lewei and Kong, Lingpeng and Zhang, Tong},
+    url = {to be updated},
+    author = {Pi, Renjie and Gao, Jiahui and Diao, Shizhe and Pan, Rui and Dong, Hanze and Zhang, Jipeng and Yao, Lewei and Kong, Lingpeng Kong and Zhang, Tong},
     month = {May},
     year = {2023}
 }</code></pre>
-  </div>
+    </div>
 </section>
 
 
 <section class="section" id="Acknowledgement">
     <div class="container is-max-desktop content">
-      <h2 class="title">Acknowledgement</h2>
-      <p>
-        This website is adapted from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>, licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-        Commons Attribution-ShareAlike 4.0 International License</a>.
-      </p>
-      <p>
-        We thank the LLaMA team for granting us access to their models and open-source projects, such as Vicuna and MiniGPT-4.
-      </p>
+        <h2 class="title">Acknowledgement</h2>
+        <p>
+            This website is adapted from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>, licensed
+            under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+        </p>
+        <p>
+            We thank the LLaMA team for granting us access to their models and open-source projects, such as Vicuna and
+            MiniGPT-4.
+        </p>
     </div>
-  </section>
+</section>
 
 <section class="section" id="Results">
     <div class="container is-max-desktop content">
-      <h2 class="title">Results</h2>
+        <h2 class="title">Results</h2>
     </div>
-<!--  </section>-->
+    <!--  </section>-->
 
-<!--<section class="section">-->
-<div id="main" style="width: 1545px; margin: 0px auto;">
-  <div class="box"><div class="pic"><img src="static/demos/demo_banana.png" alt=""></div></div>
-  <div class="box"><div class="pic"><img src="static/demos/demo_foods.png" alt=""></div></div>
-  <div class="box"><div class="pic"><img src="static/demos/demo_refrigerator.png" alt=""></div></div>
-  <div class="box"><div class="pic"><img src="static/demos/demo_wine.png" alt=""></div></div>
-  <div class="box"><div class="pic"><img src="static/demos/demo_smoking.png" alt=""></div></div>
-<!--  <div class="box"><div class="pic"><img src="demos/ad_2.png" alt=""></div></div>-->
-<!--  <div class="box" style="position: absolute; left: 1030px; top: 593px;"><div class="pic"><img src="demos/cook_2.png" alt=""></div></div>-->
-<!--  <div class="box" style="position: absolute; left: 0px; top: 716px;"><div class="pic"><img src="demos/describe_2.png" alt=""></div></div>-->
-
-
-<!--  <div class="box" style="position: absolute; left: 0px; top: 1279px;"><div class="pic"><img src="demos/fact_1.png" alt=""></div></div>-->
-<!--  <div class="box" style="position: absolute; left: 1030px; top: 1433px;"><div class="pic"><img src="demos/fact_2.png" alt=""></div></div>-->
-<!--  <div class="box" style="position: absolute; left: 0px; top: 1857px;"><div class="pic"><img src="demos/fix_2.png" alt=""></div></div>-->
-<!--  <div class="box" style="position: absolute; left: 515px; top: 2247px;"><div class="pic"><img src="demos/fun_1.png" alt=""></div></div>-->
-<!--  <div class="box" style="position: absolute; left: 1030px; top: 2273px;"><div class="pic"><img src="demos/fun_2.png" alt=""></div></div>-->
-
-<!--  <div class="box" style="position: absolute; left: 0px; top: 2758px;"><div class="pic"><img src="demos/logo_1.png" alt=""></div></div>-->
-<!--  <div class="box" style="position: absolute; left: 1030px; top: 2758px;"><div class="pic"><img src="demos/op_1.png" alt=""></div></div>-->
-<!--  <div class="box" style="position: absolute; left: 515px; top: 3171px;"><div class="pic"><img src="demos/op_2.png" alt=""></div></div>-->
-
-<!--  <div class="box" style="position: absolute; left: 0px; top: 3289px;"><div class="pic"><img src="demos/wop_1.png" alt=""></div></div>-->
-<!--  <div class="box" style="position: absolute; left: 1030px; top: 3420px;"><div class="pic"><img src="demos/people_2.png" alt=""></div></div>-->
-<!--  <div class="box" style="position: absolute; left: 1030px; top: 3828px;"><div class="pic"><img src="demos/rhyme_2.png" alt=""></div></div>-->
-<!--  <div class="box" style="position: absolute; left: 0px; top: 4012px;"><div class="pic"><img src="demos/story_1.png" alt=""></div></div>-->
-<!--  <div class="box" style="position: absolute; left: 515px; top: 4080px;"><div class="pic"><img src="demos/story_2.png" alt=""></div></div>-->
-
-<!--  <div class="box" style="position: absolute; left: 515px; top: 5043px;"><div class="pic"><img src="demos/describe_1.png" alt=""></div></div>-->
-<!--  <div class="box" style="position: absolute; left: 0px; top: 5222px;"><div class="pic"><img src="demos/people_1.png" alt=""></div></div>-->
+    <!--<section class="section">-->
+    <div id="main" style="width: 1545px; margin: 0px auto;">
+        <div class="box">
+            <div class="pic"><img src="static/demos/demo_banana.png" alt=""></div>
+        </div>
+        <div class="box">
+            <div class="pic"><img src="static/demos/demo_foods.png" alt=""></div>
+        </div>
+        <div class="box">
+            <div class="pic"><img src="static/demos/demo_refrigerator.png" alt=""></div>
+        </div>
+        <div class="box">
+            <div class="pic"><img src="static/demos/demo_wine.png" alt=""></div>
+        </div>
+        <div class="box">
+            <div class="pic"><img src="static/demos/demo_smoking.png" alt=""></div>
+        </div>
+        <!--  <div class="box"><div class="pic"><img src="demos/ad_2.png" alt=""></div></div>-->
+        <!--  <div class="box" style="position: absolute; left: 1030px; top: 593px;"><div class="pic"><img src="demos/cook_2.png" alt=""></div></div>-->
+        <!--  <div class="box" style="position: absolute; left: 0px; top: 716px;"><div class="pic"><img src="demos/describe_2.png" alt=""></div></div>-->
 
 
-</div>
+        <!--  <div class="box" style="position: absolute; left: 0px; top: 1279px;"><div class="pic"><img src="demos/fact_1.png" alt=""></div></div>-->
+        <!--  <div class="box" style="position: absolute; left: 1030px; top: 1433px;"><div class="pic"><img src="demos/fact_2.png" alt=""></div></div>-->
+        <!--  <div class="box" style="position: absolute; left: 0px; top: 1857px;"><div class="pic"><img src="demos/fix_2.png" alt=""></div></div>-->
+        <!--  <div class="box" style="position: absolute; left: 515px; top: 2247px;"><div class="pic"><img src="demos/fun_1.png" alt=""></div></div>-->
+        <!--  <div class="box" style="position: absolute; left: 1030px; top: 2273px;"><div class="pic"><img src="demos/fun_2.png" alt=""></div></div>-->
+
+        <!--  <div class="box" style="position: absolute; left: 0px; top: 2758px;"><div class="pic"><img src="demos/logo_1.png" alt=""></div></div>-->
+        <!--  <div class="box" style="position: absolute; left: 1030px; top: 2758px;"><div class="pic"><img src="demos/op_1.png" alt=""></div></div>-->
+        <!--  <div class="box" style="position: absolute; left: 515px; top: 3171px;"><div class="pic"><img src="demos/op_2.png" alt=""></div></div>-->
+
+        <!--  <div class="box" style="position: absolute; left: 0px; top: 3289px;"><div class="pic"><img src="demos/wop_1.png" alt=""></div></div>-->
+        <!--  <div class="box" style="position: absolute; left: 1030px; top: 3420px;"><div class="pic"><img src="demos/people_2.png" alt=""></div></div>-->
+        <!--  <div class="box" style="position: absolute; left: 1030px; top: 3828px;"><div class="pic"><img src="demos/rhyme_2.png" alt=""></div></div>-->
+        <!--  <div class="box" style="position: absolute; left: 0px; top: 4012px;"><div class="pic"><img src="demos/story_1.png" alt=""></div></div>-->
+        <!--  <div class="box" style="position: absolute; left: 515px; top: 4080px;"><div class="pic"><img src="demos/story_2.png" alt=""></div></div>-->
+
+        <!--  <div class="box" style="position: absolute; left: 515px; top: 5043px;"><div class="pic"><img src="demos/describe_1.png" alt=""></div></div>-->
+        <!--  <div class="box" style="position: absolute; left: 0px; top: 5222px;"><div class="pic"><img src="demos/people_1.png" alt=""></div></div>-->
+
+
+    </div>
 
 </section>
 
