@@ -250,7 +250,7 @@
                         To address the challenge of reasoning-based object detection, we employ the visual encoder of
                         BLIP-2 to comprehend the image and extract image features. We then develop a
                         cross-modal alignment function to map the image features to the text domain, and utilize
-                        Vicuna as the knowledge brain to interpret both the image features and human
+                        Vicuna/Robin as the knowledge brain to interpret both the image features and human
                         instructions, perform reasoning, and determine the target objects in the image that can help
                         accomplish the given task. Finally, we use an off-the-shelf detector,
                         Grounding-DINO, to localize the target objects in the image. Following
@@ -322,6 +322,9 @@
         </div>
         <div class="box">
             <div class="pic"><img src="static/demos/demo_smoking.png" alt=""></div>
+        </div>
+        <div class="box">
+            <div class="pic"><img src="static/demos/demo_bird.png" alt=""></div>
         </div>
         <!--  <div class="box"><div class="pic"><img src="demos/ad_2.png" alt=""></div></div>-->
         <!--  <div class="box" style="position: absolute; left: 1030px; top: 593px;"><div class="pic"><img src="demos/cook_2.png" alt=""></div></div>-->
